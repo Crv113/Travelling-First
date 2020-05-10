@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Andhibath';
+    src: url('Andhibath.otf');
+}
+
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('BebasNeue-Regular.ttf');
+}
+p {
+    text-align: justify;
+}
+/*CSS GENERAL*/
+html {
+    scroll-behavior: smooth;
+}
+section {
+    padding-top: 38px;
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-family: Andhibath;
+    color: white;
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 8vw;
+}
+
+h2 {
+
+    border-bottom: 1px solid;
+
+}
+
+/*CSS NAV*/
+.bg {
+  background-color: rgb(16, 16, 16);
+}
+
+.navi {
+  width: 110%;
+}
+
+nav li {
+
+}
+nav a{
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+nav li {
+  transition: all 0.2s ease-in-out;
+}
+nav li:hover {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0px -2px 0px 0px #FFF;
+    transition: all 0.2s ease-in-out;
+}
+
+nav .burger-btn {
+  border:0px solid transparent; /* this was 1px earlier */
+ }
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+/*CSS HOME*/
+.home-text {
+    position: absolute;
+    top: 0;
+}
+
+.home-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*CSS ARTICLE*/
+img {
+    margin-bottom: 10px;
+}
+h6 {
+    font-size: smaller;
+}
+.image-box {
+    text-align: center;
+}
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+
+/*HOME FONT SIZE FOR XS SCREENS*/
+@media (max-width: 540px) {
+    h1 {
+        font-size: 11vw;
+    }
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(195, 195, 195, 0.92);
+    /*border-radius: 10px;*/
+}
